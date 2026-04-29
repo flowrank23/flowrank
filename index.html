@@ -445,8 +445,10 @@ WRITE THESE 4 FIELDS:
 
 4. BOARD: {board_instruction}
 
-Return ONLY this JSON, nothing else:
-{"title":"...","description":"...","tags":["phrase 1","phrase 2","phrase 3","phrase 4","phrase 5"],"board":"..."}`;
+CRITICAL: Return ONLY the raw JSON object below. No explanation, no markdown, no code blocks, no text before or after.
+{"title":"...","description":"...","tags":["phrase 1","phrase 2","phrase 3","phrase 4","phrase 5"],"board":"..."}
+
+If you add ANY text outside the JSON, the system will fail. Output ONLY the JSON.`;
 
 // ═══════════════════════════════════════════════════════════════
 // STATE
